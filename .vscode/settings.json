@@ -1,5 +1,4 @@
 {
-  "terminal.integrated.tabs.location": "right",
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.confirmOnKill": "editor"
 }
