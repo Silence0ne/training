@@ -37,7 +37,7 @@ function App() {
         HELLO
       </Typography> */}
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Stack direction="row" spacing={2} justifyContent="space-between">
         <Sidebar />
         <Feed />
