@@ -46,7 +46,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     [theme.breakpoints.up('sm')]: {
       width: '0ch',
       '&:focus': {
-        width: '20ch',
+        width: '15ch',
       },
     },
   },
@@ -62,7 +62,7 @@ const Sidebar = () => {
       bgcolor="skyblue"
       flex={2}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" } }}
+      sx={{ display: { xs: "none", sm: "block" },  }}
     >
       <Toolbar sx={{display: "flex", justifyContent: "flex-start", paddingLeft: "0!important"  }}>
           <Search>
@@ -77,29 +77,29 @@ const Sidebar = () => {
         </Toolbar>
 
         {/* ********************** */}
-      <Icons color="#fff" sx={{width: "20%", display:"flex",}}>
+      <Icons color="#fff" sx={{ "&:hover":{"&. gogo":{color:"red"}}, width: "20%", display:"flex", }}>
       <IconButton>
-        <HomeIcon fontSize="large" />
+        <HomeIcon fontSize="large" className="gogo" />
         </IconButton>
         <Link
           component= "button"
           underline="none"
         >
-          <Typography color= "#7d7d7d" paddingTop={1}>Home</Typography>
+          <Typography className="gogo" color= "#7d7d7d" paddingTop={1}>Home</Typography>
         </Link>
       </Icons>
       
       {/* ************************ */}
       <Icons sx={{width: "auto", display:"flex",}}>
-      <IconButton>
-        <LibraryMusicIcon fontSize="large" />
+        <IconButton>
+          <LibraryMusicIcon fontSize="large" />
         </IconButton>
         <Link
           sx={{paddingtop: "100px"}}
           component="button"
           underline="none"
         >
-          <Typography color= "#7d7d7d" paddingTop={2}>Yor Library</Typography>
+          <Typography sx={{color: "#7d7d7d",}} paddingTop={0}>Yor Library</Typography>
         </Link>
       </Icons>
 
